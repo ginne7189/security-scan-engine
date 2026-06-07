@@ -34,3 +34,16 @@ python -m agents.dependency_agent sample_app/
 
 LLM 해석 레이어를 켜려면 `.env` 에 `ANTHROPIC_API_KEY`(또는 `OPENAI_API_KEY`)를 넣으세요.
 키가 없어도 모든 스캐너는 규칙 기반으로 끝까지 동작합니다.
+
+<!-- NAV -->
+
+## 🔗 관련 저장소 (5일 과정 전체)
+
+| | 저장소 | 내용 |
+|---|---|---|
+|  | [`security-agent-lab-day1`](https://github.com/ginne7189/security-agent-lab-day1) | Day 1 · 정책이 결과를 바꾼다 |
+|  | [`security-agent-lab-day2`](https://github.com/ginne7189/security-agent-lab-day2) | Day 2 · 도구 호출 & 결과 분리 |
+|  | [`security-agent-lab-day3`](https://github.com/ginne7189/security-agent-lab-day3) | Day 3 · 멀티에이전트 = 역할 분리 |
+|  | [`security-agent-lab-day4`](https://github.com/ginne7189/security-agent-lab-day4) | Day 4 · 위험도 점수화 |
+|  | [`security-agent-lab-day5`](https://github.com/ginne7189/security-agent-lab-day5) | Day 5 · 통합 |
+| 👉 **현재** | [`security-scan-engine`](https://github.com/ginne7189/security-scan-engine) | 🛠️ 스캐닝 엔진 코어 (SAST·Secret·Dependency·Threat) |
