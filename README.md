@@ -50,3 +50,4 @@ LLM 해석 레이어를 켜려면 `.env` 에 `ANTHROPIC_API_KEY`(또는 `OPENAI_
 |  | [`security-agent-lab-day4`](https://github.com/ginne7189/security-agent-lab-day4) | Day 4 · 위험도 점수화 |
 |  | [`security-agent-lab-day5`](https://github.com/ginne7189/security-agent-lab-day5) | Day 5 · 통합 |
 | 👉 **현재** | [`security-scan-engine`](https://github.com/ginne7189/security-scan-engine) | 🛠️ 스캐닝 엔진 코어 (SAST·Secret·Dependency·Threat) |
+
