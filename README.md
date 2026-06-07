@@ -4,7 +4,7 @@
 LLM 키가 있으면 발견 결과를 자연어로 해석하는 레이어가 추가됩니다.
 
 > `security-agent-lab` 모노레포에서 **스캐닝 엔진**만 떼어낸 독립 저장소입니다.
-> (교육용 Day 1~5 Streamlit 실습은 `security-agent-lab-day1` / `security-agent-lab-day2to5` 저장소 참고)
+> (교육용 Day 1~5 Streamlit 실습은 `security-agent-lab-day1` ~ `security-agent-lab-day5` 저장소 참고)
 
 ## 구성
 
@@ -27,9 +27,12 @@ python check_env.py            # 환경 점검
 pytest -q                      # 전체 테스트 (키 불필요)
 
 # 개별 에이전트 직접 실행
-python -m agents.sast_agent sample_app/ policies/CLAUDE.md
-python -m agents.secret_agent sample_app/
-python -m agents.dependency_agent sample_app/
+python -m agents.sast_agent --target sample_app/ --policy policies/CLAUDE.md
+python -m agents.secret_agent --target sample_app/
+python -m agents.dependency_agent --target sample_app/
+
+# 통합 파이프라인(검증·HITL·위협정보·리포트)
+python orchestrator/supervisor_graph.py --target sample_app/ --threat-intel --report final
 ```
 
 LLM 해석 레이어를 켜려면 `.env` 에 `ANTHROPIC_API_KEY`(또는 `OPENAI_API_KEY`)를 넣으세요.
