@@ -1,0 +1,9 @@
+# Security Scan Engine 의존성
+langgraph>=0.2.0
+langchain-core>=0.3.0
+mcp>=1.0.0
+flask>=3.0.0
+python-dotenv>=1.0.0
+anthropic>=0.40.0
+openai>=1.50.0
+pytest>=8.0.0

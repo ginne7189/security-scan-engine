@@ -1,0 +1,9 @@
+# ⚠️ 스캔 전용(SCAN TARGET) — 절대 pip install 하지 마세요 / DO NOT pip install
+# 이 파일은 Dependency Agent 가 "텍스트로 읽어" 취약 버전을 탐지하는 점검 대상입니다.
+# 일부러 취약·충돌 버전을 고정했으므로 설치하면 실패하는 것이 정상입니다.
+#   (예: flask 2.0.1 ↔ jinja2 2.11.2 의존성 충돌)
+# VS Code 가 "가상환경 만들기"를 제안해도 이 파일은 선택하지 마세요.
+flask==2.0.1
+requests==2.19.1
+pyyaml==5.1
+jinja2==2.11.2

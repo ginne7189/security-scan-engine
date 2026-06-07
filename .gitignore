@@ -1,0 +1,10 @@
+.env
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+reports/*.md
+reports/*.json
+!reports/.gitkeep
+memory/audit_log.jsonl
+course/**/reports/
